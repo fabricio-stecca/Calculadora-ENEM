@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+        <header>
+            
+        </header>
+
+
+        <main>
+            <h1 class="titulo">Média ENEM</h1>
+            <section class="formbox">
+                <p>
+                    <label for="iling">Linguagens</label><input type="number" name="ling" id="iling">
+                    <label for="p1">Peso</label> <input type="number" name="p1" id="p1" value="1" class="peso">
+                </p>
+                <p>
+                    <label for="ihum">Humanas</label><input type="number" name="hum" id="ihum">
+                    <label for="p2">Peso</label> <input type="number" name="p2" id="p2" value="1" class="peso">
+                </p>
+                <p>
+                    <label for="inat">Naturezas</label><input type="number" name="nat" id="inat">
+                    <label for="p3">Peso</label> <input type="number" name="p3" id="p3" value="1" class="peso">
+                </p>
+                <p>
+                    <label for="imat">Matemática</label><input type="number" name="mat" id="imat">
+                    <label for="p4">Peso</label> <input type="number" name="p4" id="p4" value="1" class="peso">
+                </p>
+                <p>
+                    <label for="ired">Redação</label><input type="number" name="red" id="ired">
+                    <label for="p5">Peso</label> <input type="number" name="p5" id="p5" value="1" class="peso">
+                </p>
+                <input type="button" value="Calcular" onclick="clicar()">
+                <div id="res"></div>
+            </section>
+        </main>
+
+    <script>
+        function clicar() {
+
+            var ling = window.document.getElementById('iling')
+            var hum = window.document.getElementById('ihum')
+            var nat = window.document.getElementById('inat')
+            var mat = window.document.getElementById('imat')
+            var red = window.document.getElementById('ired')
+
+            var p1 = window.document.getElementById('p1')
+            var p2 = window.document.getElementById('p2')
+            var p3 = window.document.getElementById('p3')
+            var p4 = window.document.getElementById('p4')
+            var p5 = window.document.getElementById('p5')
+
+            var n1 = Number(ling.value)
+            var n2 = Number(hum.value)
+            var n3 = Number(nat.value)
+            var n4 = Number(mat.value)
+            var n5 = Number(red.value)
+
+            var p1 = Number(p1.value)
+            var p2 = Number(p2.value)
+            var p3 = Number(p3.value)
+            var p4 = Number(p4.value)
+            var p5 = Number(p5.value)
+
+            var m = ((n1*p1) + (n2*p2) + (n3*p3) + (n4*p4) + (n5*p5))/(p1 + p2 + p3 + p4 + p5)
+
+            res.innerHTML = `Sua média é ${m}`
+
+
+        }
+
+    </script>
+    
+</body>
+</html>
