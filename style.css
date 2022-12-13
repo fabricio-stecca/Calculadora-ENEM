@@ -24,7 +24,7 @@ main {
 
 }
 
-.peso {
+.pesobox {
     width: 30px;
 }
 
@@ -38,7 +38,7 @@ main {
 
 }
 
-.dis {
+.disbox {
     width: 15vw;
 }
 
@@ -54,4 +54,8 @@ div#res {
 label {
     margin: 10px 7px 10px 1px;
     
+}
+
+.botao {
+    cursor: pointer;
 }
