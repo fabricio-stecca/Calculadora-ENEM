@@ -47,29 +47,17 @@
     <script>
         function clicar() {
 
-            var ling = window.document.getElementById('iling')
-            var hum = window.document.getElementById('ihum')
-            var nat = window.document.getElementById('inat')
-            var mat = window.document.getElementById('imat')
-            var red = window.document.getElementById('ired')
+            var n1 = Number(window.document.getElementById('iling').value)
+            var n2 = Number(window.document.getElementById('ihum').value)
+            var n3 = Number(window.document.getElementById('inat').value)
+            var n4 = Number(window.document.getElementById('imat').value)
+            var n5 = Number( window.document.getElementById('ired').value)
 
-            var p1 = window.document.getElementById('p1')
-            var p2 = window.document.getElementById('p2')
-            var p3 = window.document.getElementById('p3')
-            var p4 = window.document.getElementById('p4')
-            var p5 = window.document.getElementById('p5')
-
-            var n1 = Number(ling.value)
-            var n2 = Number(hum.value)
-            var n3 = Number(nat.value)
-            var n4 = Number(mat.value)
-            var n5 = Number(red.value)
-
-            var p1 = Number(p1.value)
-            var p2 = Number(p2.value)
-            var p3 = Number(p3.value)
-            var p4 = Number(p4.value)
-            var p5 = Number(p5.value)
+            var p1 = Number(window.document.getElementById('p1').value)
+            var p2 = Number(window.document.getElementById('p2').value)
+            var p3 = Number(window.document.getElementById('p3').value)
+            var p4 = Number(window.document.getElementById('p4').value)
+            var p5 = Number(window.document.getElementById('p5').value)
 
             var m = ((n1*p1) + (n2*p2) + (n3*p3) + (n4*p4) + (n5*p5))/(p1 + p2 + p3 + p4 + p5)
 
