@@ -31,9 +31,14 @@ main {
 .formbox {
     border: 2px solid black;
     border-radius: 0px 0px 10px 10px;
-    width: 400px;
+    width: auto;
+    padding-right: 22px;
 
 
+}
+
+.dis {
+    width: 15vw;
 }
 
 div#res {
